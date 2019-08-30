@@ -1,0 +1,35 @@
+<html>
+<head>
+    <!-- Load the latest version of TensorFlow.js -->
+    <!--<script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>-->
+    <script src="../static/tf.min.js"></script>
+    <script src="../static/mobilenet.min.js"></script>
+    <script src="../static/jquery-3.4.1.js"></script>
+    <script src="../static/index.js"></script>
+    <link href="../static/main.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="console"></div>
+    
+    <form id="upload-file" enctype="application/x-www-form-urlencoded">
+        <img id="img" crossorigin width="227" height="227" />
+        <label  for="imageUpload" class="upload-label">
+            Choose an Image...
+        </label>
+        <input type="file" name="image" id="imageUpload" accept=".png, .jpg, .jpeg">
+    </form>
+
+    <div class="loader"></div>
+
+    <div class="image-section">
+        <div>
+            <button type="button" class="btn btn-primary btn-lg " id="btn-predict">Predict!</button>
+        </div>
+    </div>
+    <span></span>
+    <label id = "ImageClassification" ></label>
+    <!-- Load index.js after the content of the page -->
+    
+</body>
+</html>
